@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CRM - Create Membership | Crunch Health Club</title>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="description" content="New membership creation form for Crunch Health Club"/>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="cookies.js"></script>
+<script src="script.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<div id="navbar">
+		<table>
+			<tr>
+				<td><h1>Crunch Health Club CRM</h1></td>
+				<td>&nbsp;</td>
+				<td><a href="crm-home.html">CRM Home</a></td>
+				<td><a href="membership-entry.html">Create Membership</a></td>
+				<td><a href="membership-update.html">Update Membership</a></td>
+				<td><a href="crm-reports.html">Reports</a></td>
+			</tr>
+		</table>
+	</div>
+	
+	<div id="container">
+		<div id="formDiv">
+			<form name="membershipForm" id="membershipForm">
+  				<fieldset name="membershipFieldset" id="membershipFieldset">
+    				<legend name="membershipLegend" id="membershipLegend">Enter New Membership Info:</legend>
+					<h3>Membership ID: <span id="memberIDspan"></span></h3>
+					<br>
+					<label>Membership Type: </label><br>
+					<label><input type="radio" name="membershipType" value="Standard">Standard</label><br>
+					<label><input type="radio" name="membershipType" value="Gold">Gold</label><br>
+					<label><input type="radio" name="membershipType" value="Family">Family</label><br>
+					<hr>
+    				<label>First Name: <input type="text" name="fname" id="fname"></label><br>
+					<label>Last Name: <input type="text" name="lname" id="lname"></label><br>
+    				<label>Email: <input type="text" name="email" id="email"></label><br>
+					<label>Home Address: <input type="text" name="address" id="address"></label><br>
+					<label>City: <input type="text" name="city" id="city"></label><br>
+					<label>State: <input type="text" name="state" id="state"></label><br>
+					<label>Zip: <input type="text" name="zip" id="zip"></label><br>
+					<hr>
+					<label>Work: <input type="text" name="work" id="work"></label><br>
+					<label>Company ID: <input type="text" name="companyID" id="companyID"></label><br>
+					<hr>
+					<label>Payment Plan: </label><br>
+					<label><input type="radio" name="paymentType" value="Monthly">Monthly</label><br>
+					<label><input type="radio" name="paymentType" value="Yearly">Yearly</label><br>
+  				</fieldset>
+			</form>
+			<br>
+			<table>
+				<tr>
+					<td><a class="okbtn" id="submitNewMembershipBtn">Create Membership</a></td>
+					<td><a href="crm-home.html" class="btns" id="backBtn">Back to CRM Home</a></td>
+				</tr>
+			</table>
+		</div>
+		
+		<div id="newMembershipCreated">
+			<h3>Membership Created for <span id="createdMembershipName"></span> | ID: <span id="createdMemberID"></span></h3>
+			<label>Membership Type: <span id="createdMembershipType"></span></label><br>
+			<hr>
+    		<label>Email: <span id="createdMembershipEmail"></span></label><br>
+			<label>Home Address: <span id="createdMembershipAddress"></span></label><br>
+			<label>City: <span id="createdMembershipCity"></span></label><br>
+			<label>State: <span id="createdMembershipState"></span></label><br>
+			<label>Zip: <span id="createdMembershipZip"></span></label><br>
+			<label>Payment: <span id="createdMembershipPayment"></span></label><br>
+			<br><br>
+			<a href="crm-home.html" class="okbtn" id="okBtn">OK</a><br>
+			<br>
+		</div>
+	</div>
+	
+	<div id="footer">
+		<h4>Designed for Crunch Health Club &nbsp; | &nbsp; Powered by A1 Solutions &nbsp; | &nbsp; &copy; 2017</h4>
+	</div>
+</body>
+</html>

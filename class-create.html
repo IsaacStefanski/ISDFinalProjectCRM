@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CRM - Create Class | Crunch Health Club</title>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="description" content="Create and schedule new class for Crunch Health Club"/>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="cookies.js"></script>
+<script src="script.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<div id="navbar">
+		<table>
+			<tr>
+				<td><h1>Crunch Health Club CRM</h1></td>
+				<td>&nbsp;</td>
+				<td><a href="crm-home.html">CRM Home</a></td>
+				<td><a href="membership-entry.html">Create Membership</a></td>
+				<td><a href="membership-update.html">Update Membership</a></td>
+				<td><a href="crm-reports.html">Reports</a></td>
+			</tr>
+		</table>
+	</div>
+	
+	<div id="container">
+		<div id="addClassFormDiv">
+			<form name="addClassForm" id="addClassForm">
+  				<fieldset name="addClassFieldset" id="addClassFieldset">
+    				<legend name="addClassLegend" id="addClassLegend">Add Class:</legend>
+					<label>Instructor Name: <input type="text" name="instructorName" id="instructorName"></label><br>
+					<label>Instructor ID: <input type="text" name="instructorID" id="instructorID"></label><br>
+					<label>Class Name: <input type="text" name="cName" id="cName"></label><br>
+					<label>Room: <input type="text" name="room" id="room"></label><br>
+					<label>Date: <input type="date" name="cDate" id="cDate"></label><br>
+					<label>Time: <input type="time" name="cTime" id="cTime"></label><br>
+  				</fieldset>
+			</form>
+			<br>
+			<table>
+				<tr>
+					<td><a class="okbtn" id="addClassBtn">Add Class</a></td>
+					<td><a href="crm-home.html" class="btns" id="backBtn">Back to CRM Home</a></td>
+				</tr>
+			</table>
+		</div>
+		
+		<div id="newClassAdded">
+			<h3>Class Added</h3>
+			<label>Name: <span id="className"></span></label><br>
+			<label>Instructor: <span id="instName"></span></label><br>
+			<label>Room: <span id="roomNum"></span></label><br>
+			<hr>
+    		<label>Date: <span id="classDate"></span></label><br>
+			<label>Time: <span id="classTime"></span></label><br>
+			<br><br>
+			<a href="crm-home.html" class="okbtn" id="okBtn">OK</a><br>
+			<br>
+		</div>
+	</div>
+	
+	<div id="footer">
+		<h4>Designed for Crunch Health Club &nbsp; | &nbsp; Powered by A1 Solutions &nbsp; | &nbsp; &copy; 2017</h4>
+	</div>
+</body>
+</html>

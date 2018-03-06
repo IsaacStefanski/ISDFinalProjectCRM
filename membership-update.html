@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CRM - Update Membership | Crunch Health Club</title>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="description" content="Form for updating existing membership at Crunch Health Club"/>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="cookies.js"></script>
+<script src="script.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<div id="navbar">
+		<table>
+			<tr>
+				<td><h1>Crunch Health Club CRM</h1></td>
+				<td>&nbsp;</td>
+				<td><a href="crm-home.html">CRM Home</a></td>
+				<td><a href="membership-entry.html">Create Membership</a></td>
+				<td><a href="membership-update.html">Update Membership</a></td>
+				<td><a href="crm-reports.html">Reports</a></td>
+			</tr>
+		</table>
+	</div>
+	
+	<div id="container">
+		<div id="enterID">
+			<h3>Enter ID of Membership to Edit: </h3>
+			<form name="enteredMemberIDForm" id="enteredMemberIDForm">
+				<label><input type="text" name="idNumIn" id="idNumIn"></label><br>
+				<input type="submit" value="OK" class="okbtn" id="updIDSubmit">
+			</form>
+		</div>
+		
+		<div id="updateForm">
+			<form name="membershipUpdateForm" id="membershipUpdateForm">
+  				<fieldset name="membershipUpdateFieldset" id="membershipUpdateFieldset">
+    				<legend name="membershipUpdateLegend" id="membershipUpdateLegend">Update Membership Info:</legend>
+					<h3 id="memberIDLabel">Membership ID: <span id="enteredMemberID"></span></h3>
+					<br>
+					<label>Membership Type: </label><br>
+					<label><input type="radio" name="updMembershipType" value="Standard">Standard</label><br>
+					<label><input type="radio" name="updMembershipType" value="Gold">Gold</label><br>
+					<label><input type="radio" name="updMembershipType" value="Family">Family</label><br>
+					<hr>
+    				<label>First Name: <input type="text" name="updFname" id="updFname"></label><br>
+					<label>Last Name: <input type="text" name="updLname" id="updLname"></label><br>
+    				<label>Email: <input type="text" name="updEmail" id="updEmail"></label><br>
+					<label>Home Address: <input type="text" name="updAddress" id="updAddress"></label><br>
+					<label>City: <input type="text" name="updCity" id="updCity"></label><br>
+					<label>State: <input type="text" name="updState" id="updState"></label><br>
+					<label>Zip: <input type="text" name="updZip" id="updZip"></label><br>
+					<hr>
+					<label>Work: <input type="text" name="updWork" id="updWork"></label><br>
+					<label>Company ID: <input type="text" name="updCompanyID" id="updCompanyID"></label><br>
+					<hr>
+					<label>Payment Plan: </label><br>
+					<label><input type="radio" name="updPaymentType" value="Monthly">Monthly</label><br>
+					<label><input type="radio" name="updPaymentType" value="Yearly">Yearly</label><br>
+  				</fieldset>
+			</form>
+			<br>
+			<table>
+				<tr>
+					<td><a class="okbtn" id="updateExistingMembershipBtn">Update Membership</a></td>
+					<td><a href="crm-home.html" class="btns" id="backBtn">Back to CRM Home</a></td>
+				</tr>
+			</table>
+		</div>
+		
+		<div id="membershipUpdated">
+			<h3>Membership Updated for <span id="updatedMembershipName"></span> | ID: <span id="updatedMemberID"></span></h3>
+			<label>Membership Type: <span id="updatedMembershipType"></span></label><br>
+			<hr>
+    		<label>Email: <span id="updatedMembershipEmail"></span></label><br>
+			<label>Home Address: <span id="updatedMembershipAddress"></span></label><br>
+			<label>City: <span id="updatedMembershipCity"></span></label><br>
+			<label>State: <span id="updatedMembershipState"></span></label><br>
+			<label>Zip: <span id="updatedMembershipZip"></span></label><br>
+			<label>Payment: <span id="updatedMembershipPayment"></span></label><br>
+			<label>Work: <span id="updatedMembershipWork"></span></label><br>
+			<br><br>
+			<a href="crm-home.html" class="okbtn" id="okBtn">OK</a><br>
+			<br>
+		</div>
+	</div>
+	
+	<div id="footer">
+		<h4>Designed for Crunch Health Club &nbsp; | &nbsp; Powered by A1 Solutions &nbsp; | &nbsp; &copy; 2017</h4>
+	</div>
+</body>
+</html>

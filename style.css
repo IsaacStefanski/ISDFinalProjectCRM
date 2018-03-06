@@ -1,0 +1,185 @@
+/*style.css*/
+
+#navbar {
+	overflow: hidden;
+	background-color: #000099;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 10px;
+	color: white;
+	font-family: 'Raleway', sans-serif;
+}
+
+#navbar a {
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-decoration: none;
+}
+
+#navbar a:hover {
+	color: #fc0;
+	font-weight: bold;
+}
+
+#navbar a:active {
+	color: #39f;
+}
+
+.btns {
+    background-color: #000099;
+    color: white;
+	font-family: 'Raleway', sans-serif;
+	font-size: 12;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 15px 20px 15px 20px;
+    border: none;
+    border-radius: 4px;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.okbtn {
+    background-color: #248f24;
+    color: white;
+	font-family: 'Raleway', sans-serif;
+	font-size: 12;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 15px 20px 15px 20px;
+    border: none;
+    border-radius: 4px;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.schedule {
+	background-color: white;
+	padding: 5px;
+	margin: auto;
+	text-align: center;
+}
+
+.scheduleHeader {
+	background-color: #000099;
+	font-weight: bold;
+	color: white;
+}
+
+#ptSchedule td {
+	padding: 5px 10px 5px 10px;
+}
+
+#ptSchedule tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+body {
+	background-color: #c2d6d6;
+	color: black;
+	font-family: 'Raleway', sans-serif;
+}
+
+table {
+	align: center;
+	text-align: center;
+	margin: auto;
+}
+
+label {
+	display: block;
+}
+
+#crmHomeTable {
+	padding: 20px;
+}
+
+#crmHomeTable td {
+	padding: 20px;
+}
+
+#container {
+	padding: 16px;
+	margin: auto;
+	margin-top: 150px;
+	margin-bottom: 100px;
+	width: auto;
+	height: auto;
+	text-align: center;
+}
+
+#membershipForm, #membershipUpdateForm,
+  #schedulePTForm, #addClassForm {
+	margin: auto;
+	width: 700px;
+	text-align: left;
+}
+
+#membershipForm input[type=text],
+  #membershipUpdateForm input[type=text],
+  #schedulePTForm input[type=text],
+  #addClassForm input[type=text]  {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+fieldset {
+	background-color: gray;
+	color: white;
+}
+
+legend {
+	background-color: white;
+	color: black;
+	padding: 5px;
+	border: solid 1px white;
+	border-radius: 5px;
+	margin-bottom: 8px;
+}
+
+#newMembershipCreated,
+  #membershipUpdated,
+  #newSessionScheduled,
+  #newClassAdded  {
+	background-color: #000;
+	color: white;
+	width: 600px;
+	padding: 10px;
+	margin: auto;
+	border: none;
+    border-radius: 4px;
+	text-align: left;
+}
+
+#newMembershipCreated a,
+  #membershipUpdated a,
+  #newSessionScheduled a,
+  #newClassAdded a {
+	padding: 15px 285px 15px 285px;
+	margin-left: 4px;
+	text-align: center;
+}
+
+#footer {
+	overflow: hidden;
+	background-color: #000099;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 10px;
+	color: white;
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+}
